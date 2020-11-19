@@ -6,7 +6,8 @@ const projectSchema = new Schema({
     projectName: { type: String, required: true },
     description: { type: String, required: true },
     picture: { type: String, required: true },
-    date: { type: Date, required: true },
+    url: { type: String, required: true },
+    monthYear: { type: String, required: true },
   }, {
     timestamps: true,
   });

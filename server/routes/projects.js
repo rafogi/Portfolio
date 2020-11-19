@@ -10,14 +10,16 @@ router.route('/').get((req, res) => {
 router.route('/add').post((req, res) => {
   const projectName = req.body.projectName;
   const description = req.body.description;
-  const picture = Number(req.body.picture);
-  const date = Date.parse(req.body.date);
+  const picture = req.body.picture;
+  const url = req.body.url;
+  const monthYear = Date.parse(req.body.monthYear);
 
   const newProject = new Project({
     projectName,
     description,
     picture,
-    date,
+    url,
+    monthYear,
   });
 
   newProject.save()
@@ -26,24 +28,24 @@ router.route('/add').post((req, res) => {
 });
 
 router.route('/:id').get((req, res) => {
-  Exercise.findById(req.params.id)
+  Project.findById(req.params.id)
     .then(project => res.json(project))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/:id').delete((req, res) => {
-  Exercise.findByIdAndDelete(req.params.id)
+  Project.findByIdAndDelete(req.params.id)
     .then(() => res.json('project deleted.'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/update/:id').post((req, res) => {
-  Exercise.findById(req.params.id)
+  Project.findById(req.params.id)
     .then(exercise => {
-      exercise.projectName = req.body.projectName;
-      exercise.description = req.body.description;
-      exercise.picture = req.body.picture;
-      exercise.date = Date.parse(req.body.date);
+      project.projectName = req.body.projectName;
+      project.description = req.body.description;
+      project.picture = req.body.picture;
+      project.monthYear = Date.parse(req.body.monthYear);
 
       exercise.save()
         .then(() => res.json('project updated!'))
