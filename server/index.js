@@ -1,23 +1,32 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const cors = require('cors')
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const mongoose = require('mongoose');
+require('dotenv').config();
 
-const db = require('./db')
-const movieRouter = require('./routes/movie-router')
 
-const app = express()
-const apiPort = 3000
 
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(cors())
-app.use(bodyParser.json())
+const app = express();
+const port = process.env.PORT || 5000;
 
-db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+app.use(cors());
+app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+const uri = process.env.ATLAS_URI
+mongoose.connect(uri, {useNewUrlParser:true, useCreateIndex:true }
+);
+
+const connection = mongoose.connection;
+connection.once('open', ()=> {
+    console.log("MongoDB database connection established successfully");
 })
 
-app.use('/api', movieRouter)
+const projects = require('./routes/projects');
 
-app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
+
+app.use('/projects', projects);
+
+
+app.listen(port, () => {
+    console.log(`Server running on port: ${port}`);
+})
