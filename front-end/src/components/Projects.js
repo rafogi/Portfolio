@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
+export default function App() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const url = "/projects";
+    axios.get(url)
+    .then((data) => {
+      
+      setProjects(data.data)
+    })
+  }, []);
+
+  console.log(projects);
 
 
-function Project() {
   return (
-    <div className="Project">
-        <h1>Projects</h1>
-    </div>
-  );
+    <h1>projects</h1>
+  )
 }
-
-export default Project;
