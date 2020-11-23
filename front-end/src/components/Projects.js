@@ -12,9 +12,11 @@ export default function App() {
       setProjects(data.data)
     })
   }, []);
-
+  
   console.log(projects);
-
+  if (!projects.length) {
+    return null;
+  }
 
   return (
     <h1>projects</h1>

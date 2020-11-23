@@ -1,0 +1,16 @@
+.nav-bar {
+    display: flex;
+    justify-content: start;
+}
+
+.nav-info {
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style-type: none;
+    text-decoration: none;
+    background
+}
+
