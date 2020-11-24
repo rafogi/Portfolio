@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import ProjectList from "./ProjectList";
 
 export default function App() {
   const [projects, setProjects] = useState([]);
@@ -18,7 +19,22 @@ export default function App() {
     return null;
   }
 
+  const PL = projects.map((project) => {
+    return (
+      <ProjectList
+        key={project.id}
+        id={project.id}
+        name={project.projectName}
+        description={project.description}
+        date={project.monthYear}
+        url={project.url}
+      />
+    );
+  });
+
   return (
-    <h1>projects</h1>
+    <section classname="container">
+      {PL}
+    </section>
   )
 }
