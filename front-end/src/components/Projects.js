@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProjectList from "./ProjectList";
 import "./Project.css";
+import { Spring } from 'react-spring/renderprops';
 
 export default function App() {
   const [projects, setProjects] = useState([]);
@@ -35,8 +36,17 @@ export default function App() {
   });
 
   return (
+    <Spring
+    from={{opacity:0, marginTop: -500}}
+    to={{opacity:1, marginTop: 0}}
+    > 
+      {props => (
+      <div style={props}>
     <section className="container">
       {PL}
     </section>
+    </div>
+    )}
+ </Spring> 
   )
 }
