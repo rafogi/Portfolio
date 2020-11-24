@@ -1,7 +1,7 @@
 .nav-bar {
     display: flex;
     justify-content: start;
-    background-image: url("https://raw.githubusercontent.com/rafogi/Portfolio/main/front-end/src/img/sunset.jpg?token=AQJ3F3JAL2Z2NL7GDP3JCQ27XSIWS")
+    background-image: url("https://github.com/rafogi/Portfolio/blob/main/front-end/src/img/sunset.jpg?raw=true")
 }
 
 .nav-info {

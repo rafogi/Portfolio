@@ -1,4 +1,19 @@
-img {
-    height:350px;
-    width:350px;
+
+.project-article {
+    border: 2px solid red;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width:20vw;
+}
+
+.projHead {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.project-image {
+    height:150px;
+    width:150px;
+    border: 2px solid black;
+    border-radius: 50%;
 }

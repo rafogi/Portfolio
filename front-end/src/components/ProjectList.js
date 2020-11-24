@@ -5,11 +5,10 @@ import "./ProjectList.css";
 function ProjectList(props) {
   return (
     <div className="project-article">
-            <header>
-            <h2>{props.name}</h2>
-            <a href="#">GITHUB</a>
+            <header className="projHead">
+            <a href={props.url}><h3>{props.name}</h3></a>
             </header>
-            <img classname="project-image" src={props.picture} alt="projpic"/>
+            <img className="project-image" src={props.picture} alt="projpic"/>
             <p>{props.description}</p>
     </div>
   );

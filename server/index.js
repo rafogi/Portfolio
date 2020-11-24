@@ -24,7 +24,7 @@ connection.once('open', ()=> {
 const projects = require('./routes/projects');
 
 
-app.use('/projects', projects);
+app.use('/api/projects', projects);
 
 
 app.listen(port, () => {

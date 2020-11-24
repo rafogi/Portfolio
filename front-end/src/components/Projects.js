@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProjectList from "./ProjectList";
+import "./Project.css";
 
 export default function App() {
   const [projects, setProjects] = useState([]);
@@ -34,7 +35,7 @@ export default function App() {
   });
 
   return (
-    <section classname="container">
+    <section className="container">
       {PL}
     </section>
   )
