@@ -26,6 +26,7 @@ export default function App() {
         id={project.id}
         name={project.projectName}
         description={project.description}
+        picture={project.picture}
         date={project.monthYear}
         url={project.url}
       />
