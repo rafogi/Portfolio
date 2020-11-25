@@ -12,6 +12,7 @@
     background: url(https://github.com/rafogi/Portfolio/blob/main/front-end/src/img/milkyway.jpg?raw=true);
 }
 
+
 .project-article:hover{
     box-shadow: 5px 5px 5px #131212fd;
 }
