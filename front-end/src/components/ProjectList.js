@@ -9,10 +9,7 @@ function ProjectList(props) {
       
     <div className="project-article">
         <a className="proj-link" href={props.url}>
-        <div className="bar">
-            <h3 className="projHead">{props.name}</h3>
-            <i></i>
-		</div>
+        <h3 className="projHead">{props.name}</h3>
         <img className="project-image" src={props.picture} alt="projpic"/>
         <div className="notes">
             <p className="proj-desc">{props.description}</p>

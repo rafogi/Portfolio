@@ -37,8 +37,8 @@ export default function App() {
 
   return (
     <Spring 
-    from={{opacity:0, marginTop: -300, marginRight:-400}}
-    to={{opacity:1, marginTop: 0, marginRight:0}}
+    from={{opacity:0,}}
+    to={{opacity:1,}}
     > 
       {props => (
       <div style={props} className="spr">

@@ -7,8 +7,8 @@
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 5vh;
-    width:25vw;
-    height: 50vh;
+    width:15em;
+    height: 60vh;
     background: url(https://github.com/rafogi/Portfolio/blob/main/front-end/src/img/milkyway.jpg?raw=true);
 }
 
@@ -28,7 +28,7 @@
 
 .project-image {
     height:150px;
-    width:80%;
+    width:150px;
     border: 2px solid rgba(42, 41, 41, 0.568);
     border-radius: 30%;
 }
