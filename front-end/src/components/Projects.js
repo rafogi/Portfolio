@@ -36,12 +36,12 @@ export default function App() {
   });
 
   return (
-    <Spring
-    from={{opacity:0, marginTop: -500}}
-    to={{opacity:1, marginTop: 0}}
+    <Spring 
+    from={{opacity:0, marginTop: -300, marginRight:-400}}
+    to={{opacity:1, marginTop: 0, marginRight:0}}
     > 
       {props => (
-      <div style={props}>
+      <div style={props} className="spr">
     <section className="container">
       {PL}
     </section>

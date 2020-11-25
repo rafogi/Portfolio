@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Nav />
+        <div className="bod">
         <Route exact path="/">
           <Redirect to="/about" />
         </Route>
@@ -20,7 +21,9 @@ function App() {
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
+        </div>
       </BrowserRouter>
+
     </div>
   );
 }

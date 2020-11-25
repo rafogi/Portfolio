@@ -1,19 +1,106 @@
 
 .project-article {
-    border: 2px solid red;
+    border-top: 2px solid rgb(23, 24, 24);
+    border-bottom: 2px solid rgb(23, 24, 24);
+    border-radius: 20px;
+    margin-top: 5vh;
     margin-left: 5vw;
     margin-right: 5vw;
-    width:20vw;
+    margin-bottom: 5vh;
+    width:25vw;
+    height: 50vh;
+    background: url(https://github.com/rafogi/Portfolio/blob/main/front-end/src/img/milkyway.jpg?raw=true);
+}
+
+.project-article:hover{
+    box-shadow: 5px 5px 5px #131212fd;
 }
 
 .projHead {
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
+    color:rgb(154, 169, 170);
 }
+
+.projHead:hover{
+    color:rgb(47, 132, 138);
+    text-decoration: underline;
+}
+
 .project-image {
     height:150px;
-    width:150px;
-    border: 2px solid black;
-    border-radius: 50%;
+    width:80%;
+    border: 2px solid rgba(42, 41, 41, 0.568);
+    border-radius: 30%;
+}
+
+.proj-desc {
+    margin:auto;
+    text-align: left;
+    color:white;
+    display:flex;
+    justify-content: center;
+    width:80%;
+}
+
+.proj-link {
+    text-decoration: none;
+}
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.project-article:hover
+{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }

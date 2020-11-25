@@ -5,7 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: darkgrey;
+  background-color: #322033;
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  background-attachment: fixed;
+  background-position: 0 0;
 }
 
 code {
