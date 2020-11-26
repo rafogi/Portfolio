@@ -16,7 +16,6 @@ export default function App() {
     })
   }, []);
   
-  console.log(projects);
   if (!projects.length) {
     return null;
   }
