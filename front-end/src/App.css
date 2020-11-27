@@ -3,7 +3,8 @@
 }
 .bod {
   color:rgb(197, 191, 191);
-  position: relative; 
+  position: relative;
+  min-height: 100vh;
   top:4em;
   display:flex;
   align-items: center;
