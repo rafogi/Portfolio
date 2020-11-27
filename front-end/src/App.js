@@ -17,10 +17,10 @@ function App() {
         <Route exact path="/">
           <Redirect to="/about" />
         </Route>
-        <Route path="/about" component={About} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/about" exact component={About} />
+        <Route path="/skills" exact component={Skills} />
+        <Route path="/projects" exact component={Projects} />
+        <Route path="/contact" exact component={Contact} />
         </div>
       </BrowserRouter>
 

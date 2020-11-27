@@ -15,7 +15,7 @@
 
 .project-article:hover{
     box-shadow: 5px 5px 5px #131212fd;
-    border: 2px solid rgb(46, 46, 49);
+    /* border: 2px solid rgb(227, 227, 230); */
 }
 
 .projHead {
