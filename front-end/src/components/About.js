@@ -20,7 +20,7 @@ function About() {
       <div style={props}className="right-profile">
 
         <h2 className="right-title">Summary</h2>
-        <p className="profile-desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p className="profile-desc">Creative web developer focused on designing dynamic and robust applications. Self-motivated, analytical problem-solver driven to generate efficient user interfaces. Experienced quality-assurance specialist that pays high attention to detail and accuracy to find problems and cost effective solutions. Reliable team-player capable of multitasking to display strong organizational skills to manage tight deadlines without compromising standards</p>
         <h2 className="right-title">Hobbies</h2>
         <ul className="profile-hobbies">
           <li>Cycling</li>

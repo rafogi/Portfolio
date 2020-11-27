@@ -35,17 +35,18 @@ export default function App() {
   });
 
   return (
-    <Spring 
-    from={{opacity:0,}}
-    to={{opacity:1,}}
-    > 
-      {props => (
-      <div style={props} className="spr">
     <section className="container">
-      {PL}
+      <h1>Projects</h1>
+      <Spring 
+      from={{opacity:0,}}
+      to={{opacity:1,}}
+      > 
+        {props => (
+        <div style={props} className="spr">
+        {PL}
+        </div>
+      )}
+      </Spring> 
     </section>
-    </div>
-    )}
- </Spring> 
   )
 }
