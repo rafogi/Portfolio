@@ -5,6 +5,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    box-shadow: 0px -4px 3px rgba(22, 22, 22, 0.75);
   }
 
   .footer-icons {

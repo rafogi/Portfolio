@@ -29,7 +29,7 @@ function About() {
           <li>Basketball</li>
         </ul>
       </div>
-    )}
+    )}                                                                          
  </Spring> 
     </div>
   );

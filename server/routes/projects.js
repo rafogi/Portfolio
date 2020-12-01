@@ -33,25 +33,8 @@ router.route('/:id').get((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/:id').delete((req, res) => {
-  Project.findByIdAndDelete(req.params.id)
-    .then(() => res.json('project deleted.'))
-    .catch(err => res.status(400).json('Error: ' + err));
-});
 
-router.route('/update/:id').post((req, res) => {
-  Project.findById(req.params.id)
-    .then(exercise => {
-      project.projectName = req.body.projectName;
-      project.description = req.body.description;
-      project.picture = req.body.picture;
-      project.monthYear = req.body.monthYear;
 
-      exercise.save()
-        .then(() => res.json('project updated!'))
-        .catch(err => res.status(400).json('Error: ' + err));
-    })
-    .catch(err => res.status(400).json('Error: ' + err));
-});
+
 
 module.exports = router;

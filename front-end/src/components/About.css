@@ -9,8 +9,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 3em;
+    margin-top: 15vh;                      
     flex-wrap: wrap;
+    transition: ease-in-out 0.5s;
 }
 
 .typewriter h3 {
