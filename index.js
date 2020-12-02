@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path');
 require('dotenv').config();
 
 
@@ -33,7 +34,7 @@ if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging')
     });
   }
 
-  
+
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);
 })
