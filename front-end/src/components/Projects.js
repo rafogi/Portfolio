@@ -21,12 +21,16 @@ export default function App() {
     return null;
   }
 
-  console.log(projects);
+  let uniKey = 0;
+  const incr = function() {
+    uniKey += 1;
+    return uniKey
+  }
 
   const PL = projects.map((project) => {
     return (
       <ProjectList
-        key={project.id}
+        key={incr()}
         id={project.id}
         name={project.projectName}
         description={project.description}

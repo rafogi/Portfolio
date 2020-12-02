@@ -24,3 +24,7 @@
 .cont-title {
     margin-top: 5rem;
 }
+
+.btn-info{
+    cursor: pointer;
+}

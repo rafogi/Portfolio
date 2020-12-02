@@ -13,7 +13,7 @@ function ProjectList(props) {
 
         <ProgressiveImage src={props.picture} >
             {(src) =>
-                <img className="project-image" src={props.picture} alt="projpic"/>
+                <img className="project-image" src={src} alt="projpic"/>
             }
         </ProgressiveImage>
 

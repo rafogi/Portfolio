@@ -8,7 +8,7 @@ function Contact() {
   const [isOpen, setIsOpen] = useState(false)
   function sendEmail(e) {
     e.preventDefault();
-emailjs.sendForm(process.env.REACT_APP_SERVICE, 'template_swezulm', e.target, process.env.REACT_APP_EMAIL)
+    emailjs.sendForm('default_service', process.env.REACT_APP_EMAIL, e.target, process.env.REACT_APP_USER)
     .then((result) => {
         console.log(result.text);
     }, (error) => {

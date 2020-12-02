@@ -74,7 +74,7 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-            <a href='https://resume.creddle.io/resume/64oqpf1h5lg'
+            <a href='https://drive.google.com/file/d/1AZKOw8k1zrDWeUETRlve02L7z3eviZRZ/view?usp=sharing'
                 className='nav-links'
                 onClick={closeMobileMenu}
                 target = "_blank" 
