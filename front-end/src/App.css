@@ -9,7 +9,9 @@
   align-items: center;
   justify-content: center;
   margin:auto;
-
+  width: 100vw;
+  margin-left:0;
+  margin-right:0;
 }
 
 
