@@ -15,6 +15,8 @@ export default function App() {
       setProjects(data.data)
     })
   }, []);
+
+
   
   if (!projects.length) {
     return null;
