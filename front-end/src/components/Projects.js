@@ -8,7 +8,7 @@ export default function App() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get("/projects")
+    axios.get("api/projects")
     .then((data) => {
       
       setProjects(data.data)
