@@ -12,6 +12,9 @@
     flex-wrap: wrap;
     transition: ease-in-out 0.5s;
     margin:auto;
+    align-items: center;
+    height:100%;
+    width:100vw;
 }
 
 .typewriter h3 {
