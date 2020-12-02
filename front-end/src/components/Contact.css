@@ -7,7 +7,7 @@
     background-image: linear-gradient(15deg, #141516 0%, #4a4c4d 100%);
     border-radius: 25px;
     width:50vw;
-    height:30rem;
+    height:26rem;
     margin:1em;
     padding-bottom: 1em;
 }
@@ -15,4 +15,12 @@
 .form-control {
     margin-bottom: 2em;
     width: 80%;
+}
+
+.cont-page {
+    margin-left:10%;
+}
+
+.cont-title {
+    margin-top: 5rem;
 }

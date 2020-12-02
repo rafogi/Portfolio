@@ -8,10 +8,10 @@
 .About {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 15vh;                      
+    justify-content: center;                
     flex-wrap: wrap;
     transition: ease-in-out 0.5s;
+    margin:auto;
 }
 
 .typewriter h3 {

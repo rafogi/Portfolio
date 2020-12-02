@@ -4,7 +4,7 @@
 .bod {
   color:rgb(197, 191, 191);
   position: relative;
-  min-height: 85vh;
+  min-height: 100vh;
   display:flex;
   align-items: center;
   justify-content: center;

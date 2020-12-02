@@ -24,8 +24,8 @@ emailjs.sendForm(process.env.REACT_APP_SERVICE, 'template_swezulm', e.target, pr
     to={{opacity:1,marginTop:-0}}
     > 
     {props => (
-    <div style={props}>
-      <h1>Contact Me</h1>
+    <div style={props} className="cont-page">
+      <h1 className="cont-title">Contact Me</h1>
 
         <div className="Contact" >
         <form onSubmit={sendEmail}>
