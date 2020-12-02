@@ -1,6 +1,5 @@
 import React from 'react';
 import ProgressiveImage from "react-progressive-graceful-image";
-import ModalImage from "react-modal-image";
 import "./ProjectList.css";
 
 
