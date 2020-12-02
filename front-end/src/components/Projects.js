@@ -22,6 +22,8 @@ export default function App() {
     return null;
   }
 
+  console.log(projects);
+
   const PL = projects.map((project) => {
     return (
       <ProjectList
