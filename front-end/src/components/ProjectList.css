@@ -33,6 +33,7 @@
     width:150px;
     border: 2px solid rgba(42, 41, 41, 0.568);
     border-radius: 30%;
+    margin-bottom: 2em;
 }
 
 .proj-desc {
