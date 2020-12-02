@@ -1,32 +1,4 @@
-/* .nav-bar {
-    width: 100%;
-    z-index:99;
-    position: fixed;
-    top:0;
-    display: flex;
-    justify-content: start;
-    background-image: linear-gradient(15deg, #141516 0%, #4a4c4d 100%);
-    box-shadow: 5px 5px 5px #131212fd;
-} */
 
-/* .nav-info {
-    display: flex;
-    width: 85%;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    text-decoration: none;
-    padding-left: 2em;
-}
-
-.nav-info a {
-    text-decoration: none;
-    color: white
-}
-
-.nav-info a :hover{
-    text-decoration: underline;
-} */
 
 .navbar {
     width: 100%;
@@ -108,7 +80,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
+      height: 100rem;
       position: absolute;
       top: 60px;
       left: -100%;

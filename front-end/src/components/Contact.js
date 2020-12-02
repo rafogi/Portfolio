@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import Modal from './Modal'
+import { Spring } from 'react-spring/renderprops';
 
 function Contact() {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,9 +19,15 @@ emailjs.sendForm(process.env.REACT_APP_SERVICE, 'template_swezulm', e.target, pr
 }
 
   return(
-    <div>
+    <Spring 
+    from={{opacity:0, marginTop:-500}}
+    to={{opacity:1,marginTop:-0}}
+    > 
+    {props => (
+    <div style={props}>
       <h1>Contact Me</h1>
-        <div className="Contact">
+
+        <div className="Contact" >
         <form onSubmit={sendEmail}>
                 <div className="row pt-5 mx-auto">
                     <div className="col-8 form-group mx-auto">
@@ -44,7 +51,10 @@ emailjs.sendForm(process.env.REACT_APP_SERVICE, 'template_swezulm', e.target, pr
                 </div>
             </form>
         </div>
+
     </div>
+        )}
+        </Spring> 
 )
 }
 

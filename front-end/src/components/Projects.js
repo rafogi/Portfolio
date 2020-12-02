@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProjectList from "./ProjectList";
-import "./Project.css";
+import "./Projects.css";
 import { Spring } from 'react-spring/renderprops';
 
 export default function App() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const url = "/projects";
-    axios.get(url)
+    axios.get("/projects")
     .then((data) => {
       
       setProjects(data.data)
