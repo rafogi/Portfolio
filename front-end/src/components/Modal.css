@@ -6,6 +6,10 @@
     background-Color: #FFF;
     padding: 50px;
     z-Index: 1000;
+    border:2px solid rgb(32, 32, 46);
+    background-image: linear-gradient(15deg, #141516 0%, #4a4c4d 100%);
+    border-radius: 25px;
+    color: #FFF;
   }
   
 .OVERLAY_STYLES  {
@@ -17,3 +21,10 @@
     background-color: rgba(0, 0, 0, .7);
     z-Index: 1000;
   }
+
+.Modal_button {
+    position: fixed;
+    top:0;
+    right:0;
+    cursor: pointer;
+}

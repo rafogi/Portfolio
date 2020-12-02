@@ -94,6 +94,16 @@ function Navbar() {
                 Contact
               </Link>
             </li>
+            <li className='nav-item'>
+            <a href='https://resume.creddle.io/resume/64oqpf1h5lg'
+                className='nav-links'
+                onClick={closeMobileMenu}
+                target = "_blank" 
+                rel = "noopener noreferrer"
+              >
+                Resume
+              </a>
+            </li>
           </ul>
 
         </nav>
